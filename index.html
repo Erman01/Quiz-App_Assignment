@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="start-page" class="all-pages">
+            <h1 class="quiz-title">Welcome to quiz app</h1>
+            <div start-button>
+                <button id="btn-start" onclick="start()">
+                    Click button to start
+                </button>
+            </div>
+        </div>
+        <div id="first-question" class="all-pages" hidden>
+            <h2 class="quiz-title">Which one is not a fish?</h2>
+            <div class="answers">
+                <input type="radio" name="question1" value="Eels" />
+                <label for="correct1">Eels</label>
+                <br />
+
+                <input type="radio" name="question1" id="correct1" value="Dolphin" id="a2" />
+                <label for="a2">Dolphin </label>
+                <br />
+                <input type="radio" name="question1" value="Seahorses" id="a2" />
+                <label for="a2"> Seahorses</label>
+                <br />
+                <input type="radio" name="question1" value="Sharks" id="a3" />
+                <label for="a3">Sharks</label>
+                </label>
+                <br />
+                <button id="first-button" onclick="first()">Next</button>
+            </div>
+        </div>
+        <div id="second-question" class="all-pages" hidden>
+            <h2 class="quiz-title">
+                Which color represents Australia in Olympics ring?
+            </h2>
+            <div class="answers">
+                <input type="radio" name="question2" id="correct2" value="Blue" />
+                <label for="correct2">Blue</label>
+                <br />
+                <input type="radio" name="question2" id="a4" value="Green" />
+                <label for="a4">Green</label>
+                <br />
+                <input type="radio" name="question2" id="a5" value="Yellow" />
+                <label for="a5">Yellow</label>
+                <br />
+                <input type="radio" name="question2" id="a6" value="Black" />
+                <label for="a6">Black</label>
+                <br />
+                <button id="second-button" onclick="second()">Next</button>
+            </div>
+        </div>
+        <div id="third-question" class="all-pages" hidden>
+            <h2 class="quiz-title">Who originally wrote JavaScript?</h2>
+            <div class="answers">
+                <input type="radio" name="question3" id="correct3" value="Brendan Eich" />
+                <label for="correct3">Brendan Eich</label>
+                <br />
+                <input type="radio" name="question3" id="a7" value="Anders Hejlsberg" />
+                <label for="a7">Anders Hejlsberg</label>
+                <br />
+                <input type="radio" name="question3" id="a8" value="Jordan Walke" />
+                <label for="a8">Jordan Walke</label>
+                <br />
+                <input type="radio" name="question3" id="a9" value="Håkon Wium Lie" />
+                <label for="a9">Håkon Wium Lie</label> Håkon Wium Lie
+                <br />
+                <button id="third-button" onclick="third()">Next</button>
+            </div>
+        </div>
+        <div id="fourth-question" class="all-pages" hidden>
+            <h2 class="quiz-title">How is the weather on this saturday?</h2>
+            <div class="answers">
+                <input type="radio" name="question4" id="correct4" value="Rainy" />
+                <label for="correct4">Rainy</label>
+                <br />
+                <input type="radio" name="question4" id="a10" value="Cloudy" />
+                <label for="a10">Cloudy</label>
+                <br />
+                <input type="radio" name="question4" id="a11" value="Snowy" />
+                <label for="a11">Snowy</label>
+                <br />
+                <input type="radio" name="question4" id="a12" value="Sunny" />
+                <label for="a12">Sunny</label>
+                <br />
+                <button id="fourth-button" onclick="result()">See your score</button>
+            </div>
+        </div>
+
+        <div id="result-container">
+            <div id="total" class="all-pages" hidden>
+
+            </div>
+            <div id="reset" hidden>
+                <button id="reset-button" onclick="reset()">Play again</button>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js" type="text/javascript"></script>
+</body>
+
+</html>
